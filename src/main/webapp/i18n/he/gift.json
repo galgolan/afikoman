@@ -2,22 +2,22 @@
     "afikomanApp": {
         "gift" : {
             "home": {
-                "title": "Gifts",
-                "createLabel": "Create a new Gift",
-                "createOrEditLabel": "Create or edit a Gift"
+                "title": "מתנות",
+                "createLabel": "צור מתנה",
+                "createOrEditLabel": "צור או ערוך מתנה"
             },
             "delete": {
                 "question": "Are you sure you want to delete Gift {{ id }}?"
             },
             "detail": {
-                "title": "Gift"
+                "title": "מתנה"
             },
             "name": "שם",
-            "dateAdded": "DateAdded",
+            "dateAdded": "זמן הוספה",
             "inStock": "במלאי",
             "price": "מחיר",
             "picture": "תמונה",
-            "metadata": "Metadata"
+            "metadata": "מידע נוסף"
         }
     }
 }
