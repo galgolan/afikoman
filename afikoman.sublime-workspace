@@ -1,0 +1,915 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"lan",
+				"languageKey"
+			],
+			[
+				"log",
+				"logfile"
+			],
+			[
+				"inf",
+				"inflate"
+			],
+			[
+				"try",
+				"try	Try/Except/Else"
+			],
+			[
+				"json",
+				"jsonized"
+			],
+			[
+				"mouse",
+				"mouseEvent"
+			],
+			[
+				"revve",
+				"revvedMod"
+			],
+			[
+				"model",
+				"modelName"
+			],
+			[
+				"prod",
+				"production"
+			],
+			[
+				"url",
+				"urlPtrn"
+			],
+			[
+				"path",
+				"pathPtrn"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"sr",
+				"script"
+			],
+			[
+				"y",
+				"y_vec2"
+			],
+			[
+				"devi",
+				"device_type"
+			],
+			[
+				"min",
+				"minTime"
+			],
+			[
+				"out",
+				"outBuffer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/webapp/scripts/app/account/login/login.controller.js",
+			"settings":
+			{
+				"buffer_size": 1011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "E:\\Program Files\\MongoDB 2.6 Standard\\bin\nλ mongod --dbpath .\\data\\db\\\n\n",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Windows",
+				"name": "E:\\Program Files\\MongoDB 2.6 Standard\\bin"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/app/main/main.controller.js",
+			"settings":
+			{
+				"buffer_size": 432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/app/kids-entry/kids-entry.controller.js",
+			"settings":
+			{
+				"buffer_size": 1074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/index.html",
+			"settings":
+			{
+				"buffer_size": 11192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/app/companies-entry/companies-entry.controller.js",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/scripts/app/entities/companyOrganizationPairing/companyOrganizationPairing.controller.js",
+			"settings":
+			{
+				"buffer_size": 1706,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/biocatch/afikoman/config/SecurityConfiguration.java",
+			"settings":
+			{
+				"buffer_size": 5692,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Snippe",
+				"Snippet: bs3-alert"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Con",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 172.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"pip install ipdb",
+			"h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib;",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"view.run_command(\"example\")",
+			"Type: view.run_command(\"example\")",
+			"view.TidyXmlCommand()",
+			"view.TidyXmlCommand",
+			"view.run_command(TidyXmlCommand)",
+			"view.run_command(\"TidyXmlCommand\")"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/afikoman/jhipster",
+		"/D/afikoman/jhipster/src",
+		"/D/afikoman/jhipster/src/main",
+		"/D/afikoman/jhipster/src/main/webapp",
+		"/D/afikoman/jhipster/src/main/webapp/scripts",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/companies-entry",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities/companyOrganizationPairing",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/entities",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/entities/companyOrganizationPairing",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/navbar"
+	],
+	"file_history":
+	[
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/kids-entry/kids-entry.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/main/main.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/companies-entry/companies-entry.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/companies-entry/companies-entry.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/kids-entry/kids-entry.js",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/login.json",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/global.json",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/language/language.service.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/auth/auth.service.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/navbar/navbar.controller.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/app.js",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/en/language.json",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/main.json",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/register.json",
+		"/D/afikoman/jhipster/src/main/webapp/index.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/navbar/navbar.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/account/login/login.html",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/account/login/login.js",
+		"/C/Users/ronny_000/Desktop/CompileScripts.cmd",
+		"/C/Users/ronny_000/Desktop/UpdateDB_BioCatch.sql",
+		"/C/Users/ronny_000/Desktop/scripts/barclayscorp/sloth_inc.js",
+		"/E/Downloads/C#/ReadMe.txt",
+		"/C/Users/ronny_000/Desktop/sentry.rb",
+		"/C/Users/ronny_000/Desktop/SqlServerLogins.sql",
+		"/D/afikoman/jhipster/src/main/webapp/bower_components/angular-i18n/angular-locale_he.js",
+		"/D/afikoman/jhipster/src/main/webapp/bower_components/angular-i18n/angular-locale_he-il.js",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/en/sessions.json",
+		"/D/afikoman/jhipster/.idea/scopes/scope_settings.xml",
+		"/E/Downloads/Lloyds(slot1).PublishSettings",
+		"/E/Downloads/santanderbeta2.azurewebsites.net.PublishSettings",
+		"/E/Downloads/restored-Lloyds.azurewebsites.net.PublishSettings",
+		"/C/Users/ronny_000/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/D/afikoman/jhipster/afikoman.sublime-project",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/gift.json",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/main/main.controller.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities/kid/kid.js",
+		"/D/afikoman/jhipster/node_modules/generator-jhipster/script-base.js",
+		"/D/afikoman/jhipster/target/classes/config/mongeez/users.xml",
+		"/D/afikoman/jhipster/src/main/webapp/swagger-ui/index.html",
+		"/D/afikoman/jhipster/src/main/java/com/biocatch/afikoman/security/package-info.java",
+		"/D/afikoman/jhipster/src/main/java/com/biocatch/afikoman/domain/util/ISO8601LocalDateDeserializer.java",
+		"/D/afikoman/jhipster/README.md",
+		"/D/afikoman/jhipster/src/main/webapp/robots.txt",
+		"/D/afikoman/jhipster/src/main/java/com/biocatch/afikoman/service/util/RandomUtil.java",
+		"/D/afikoman/jhipster/node_modules/grunt-connect-proxy/node_modules/http-proxy/lib/node-http-proxy/routing-proxy.js",
+		"/D/afikoman/jhipster/node_modules/bower/node_modules/mout/math/round.js",
+		"/D/afikoman/jhipster/node_modules/bower/node_modules/retry/lib/retry_operation.js",
+		"/D/afikoman/jhipster/node_modules/generator-jhipster/node_modules/insight/lib/providers.js",
+		"/D/afikoman/jhipster/node_modules/bower/node_modules/insight/lib/providers.js",
+		"/D/afikoman/jhipster/node_modules/grunt-ng-annotate/node_modules/ng-annotate/build/es5/tests/ngmin-tests/repo/route-provider.js",
+		"/D/afikoman/jhipster/node_modules/grunt-ng-annotate/node_modules/ng-annotate/tests/ngmin-tests/repo/route-provider.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities/organization/organization.controller.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities/kid/kids.html",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/kid.json",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/components/language/language.controller.js",
+		"/D/afikoman/jhipster/src/main/webapp/scripts/app/entities/kid/kid.controller.js",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/en/global.json",
+		"/C/Users/ronny_000/Desktop/harden_server.ps1",
+		"/D/afikoman/jhipster/node_modules/generator-jhipster/app/templates/src/main/webapp/scripts/components/navbar/navbar.html",
+		"/D/afikoman/jhipster/node_modules/generator-jhipster/app/templates/src/main/webapp/scripts/components/language/_language.service.js",
+		"/D/afikoman/jhipster/node_modules/generator-jhipster/app/templates/src/main/webapp/scripts/app/_app.js",
+		"/E/Downloads/untitled/untitled/try.html",
+		"/D/afikoman/jhipster/src/main/webapp/i18n/he/language.json",
+		"/D/afikoman/jhipster/bower.json",
+		"/D/afikoman/afikoman/config/env/production.js",
+		"/D/afikoman/afikoman/packages/articles/public/routes/articles.js",
+		"/D/afikoman/afikoman/Gruntfile.js",
+		"/D/afikoman/afikoman/config/env/all.js",
+		"/D/afikoman/afikoman/bower_components/bootstrap/Gruntfile.js",
+		"/C/Users/ronny_000/Desktop/reveal.js-3.0.0/index.html",
+		"/E/Downloads/NBKO3RUfF5jZj0pTJ3r6bK-.json",
+		"/D/Code/Sloth/python_infrastructure/compression_coding_infrastructure.py",
+		"/C/Users/ronny_000/Desktop/python_proto/webserver.py",
+		"/C/Users/ronny_000/Desktop/python_proto/messages.log",
+		"/D/Code/JsClient/src/Protocol.js",
+		"/C/Users/ronny_000/Desktop/python_proto/Sloth_pb2.py",
+		"/E/Downloads/Protocol.js",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/ronny_000/SkyDrive/R&D/SQL Queries/JavaScriptDbStats.sql",
+		"/C/Users/ronny_000/Desktop/UpdateDB.sql",
+		"/D/Code/Sloth/SqlQueries/CreateSqlDB.sql",
+		"/D/Code/Sloth/SqlQueries/CreateTurkTable.sql",
+		"/D/Code/Sloth/SqlQueries/UpdateSlothDB.sql",
+		"/C/Users/ronny_000/Desktop/UpdateDB (2).sql",
+		"/D/Code/Sloth/SqlQueries/CreateSlothDB.sql",
+		"/E/FTP/Certificates/BarclaysCorp/bc.bib.barclays.com.pem.cer",
+		"/E/FTP/Certificates/BarclaysCorp/cdnz.bib.barclays.com_fixed.cer",
+		"/D/Code/Sloth/SqlQueries/UpdateSqlDB.sql",
+		"/E/FTP/Certificates/BarclaysCorp/cdnz.bib.barclays.com.cer",
+		"/E/Downloads/html2canvas.js",
+		"/C/Users/ronny_000/SkyDrive/R&D/Dashboards/Grafana/TrainerActivo",
+		"/C/Users/ronny_000/SkyDrive/R&D/Dashboards/Grafana/TrainerWidiba",
+		"/C/Users/ronny_000/SkyDrive/R&D/SQL Queries/UpdateSessionCount.sql",
+		"/D/Code/JsClient/src/sloth_inc.js",
+		"/D/Code/JsClient/src/Main.js",
+		"/D/Code/JsClient/src/util/Graphics.js",
+		"/C/Users/ronny_000/SkyDrive/R&D/Dashboards/Grafana/TrainerSantanderBzl",
+		"/E/FTP/Certificates/BarclaysCorp/barclays_corp_bc.csr",
+		"/E/FTP/Certificates/BarclaysCorp/bc.bib.barclays.com.cer",
+		"/E/FTP/Certificates/BarclaysCorp/cdnz.bib.barclays.com.pem.cer",
+		"/E/FTP/Certificates/Azure/managementCer.cer",
+		"/C/Users/ronny_000/Desktop/RemoteBrowser/Microsoft EBC business trip final.pdf",
+		"/E/FTP/UsersData/Haik/New Text Document.txt",
+		"/E/Downloads/Swift-File-Manager-master/js/swift.js",
+		"/E/Downloads/santander_test_2.txt",
+		"/E/Downloads/PlayGround DashBoard",
+		"/C/Users/ronny_000/Desktop/regTest/regtest.sh",
+		"/C/Users/ronny_000/Desktop/regTest/config.sh",
+		"/C/Users/ronny_000/Desktop/Text_to_XML/data1.txt",
+		"/C/Users/ronny_000/Desktop/Text_to_XML/Text_to_Envoy_XML.pl",
+		"/E/Downloads/csharpscripts/cs-script2/cs-script/Samples/Code.cs",
+		"/E/Downloads/csharpscripts/cs-script2/cs-script/Samples/cutfile.cs",
+		"/E/Downloads/csharpscripts/cs-script2/cs-script/Samples/google.cs",
+		"/E/Downloads/csharpscripts/cs-script2/cs-script/Samples/hello.cpp",
+		"/E/FTP/UsersData/Ronny/AccentureCiti/BioCatch Automated Test App v0.02/BiocatchTestHarness.exe.config",
+		"/D/Code/Sloth/BootStrapper/Startup.cmd",
+		"/D/Code/Analyst Workstation/static/build/bower.json",
+		"/D/Code/Analyst Workstation/static/build/.bowerrc",
+		"/D/Code/Analyst Workstation/analytics.pyproj",
+		"/D/Code/Analyst Workstation/static/js/ext/jqueryui-timepicker-addon/README.md",
+		"/D/Code/Analyst Workstation/static/js/ext/jquery-multiselect/.bower.json",
+		"/E/Downloads/itaubeta.azurewebsites.net.PublishSettings",
+		"/D/Code/Analyst Workstation/AnalystPortalWebRole/bin/download.ps1",
+		"/E/FTP/UsersData/Ronny/curl_twillio.txt",
+		"/D/Code/Analyst Workstation/requirements.txt",
+		"/D/Code/Analyst Workstation/analytics.sln",
+		"/C/Users/ronny_000/Desktop/junk/server urls.txt",
+		"/D/Code/Sloth/Sloth.CustomerApi/CustomerApiService.svc.cs"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"{\n",
+			"ng-click",
+			"$rootScope",
+			"'home'",
+			"$state.go",
+			"isInRole",
+			"lang",
+			"$translateProvider",
+			"setupPreferredLanguage",
+			"'en'",
+			"Github",
+			"github",
+			"main.github",
+			"Your login",
+			"Your Login",
+			"urlRouterProvider",
+			"routeProvider",
+			"OrganizationController",
+			"activate",
+			"organizations.html",
+			"gifts",
+			"gift",
+			"kid",
+			"kids",
+			"kids.html",
+			"global.menu.entities",
+			"getCurrent",
+			"LanguageController",
+			"assets",
+			"afikoman",
+			"generator-jhipster",
+			"list.html",
+			"index.html",
+			"initConfig",
+			"process.env",
+			"proccess.env",
+			"node",
+			"MONGOHQ_URL",
+			"process.env",
+			"DB_PORT_27017_TCP_ADDR",
+			"table",
+			"192.168",
+			"slothLocation",
+			"aetna",
+			"protocol",
+			"dummyPort",
+			"v",
+			"http",
+			"getElement=",
+			"function getElement",
+			"getElement(",
+			"innerHTML",
+			"write",
+			"logfile",
+			"touch",
+			"\\",
+			"version",
+			"drawGraphics",
+			"SantanderBzlTrainer",
+			"\n",
+			" ",
+			"\n  ",
+			"ActivoTrainer",
+			"WidibaTrainer",
+			"Itau",
+			"ItauTrainer",
+			"migalha",
+			"tipo",
+			"westeuropecloudservices",
+			"warn",
+			"Error",
+			" ",
+			"nMIIFeDCCBGCgAwIBAgIQdm",
+			"error",
+			"exitWithMessageOnError",
+			"selectNodeVersion",
+			"SelectNodeVersion",
+			"maxNumberOfUawsToProcess",
+			"FromString",
+			"ParseFromString",
+			"SerializeToString",
+			"Parse",
+			"bmuid=",
+			"105",
+			"session",
+			"lloyds",
+			"cdn",
+			"www",
+			"GetNameFromDocumentItau",
+			"ServiceProxy",
+			"getOffset",
+			"onResize",
+			"getOffset",
+			"addEventListener",
+			"listene",
+			"define",
+			"itau",
+			"itau-biocatch",
+			"Itau",
+			"limit",
+			"itau-biocatch",
+			"Itau",
+			"failed",
+			"ERROR",
+			"pathref",
+			"BaseR",
+			"Barc",
+			"Barclays_14157a27b1dc9fe4f30f1999b1ed1fa4",
+			"try",
+			"alert",
+			"itau",
+			"itau-biocatch",
+			"  ",
+			"\n",
+			"dummyCustomerPassword",
+			"\n",
+			"//",
+			"\n",
+			"//",
+			"\n",
+			"//",
+			"\n",
+			"//",
+			"\n",
+			"//",
+			"\n",
+			"//",
+			"MouseEvent"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"santanderbzlTrainer",
+			"",
+			"SantanderBzlTrainer",
+			"ActivoTrainer",
+			"WidibaTrainer",
+			"BiocatchPlayGround",
+			"",
+			"zions-biocatch",
+			"Zions",
+			"CustomerId_UserId",
+			"zions-biocatch",
+			"",
+			"\\\n",
+			": \n",
+			", ",
+			", \n",
+			"\\\n",
+			"/\n",
+			": \n",
+			": ",
+			", ",
+			"",
+			": \n",
+			",",
+			": ",
+			":\n",
+			"\\\n",
+			"\\",
+			"int64",
+			"model->",
+			"mex_ClassificationRF_predict",
+			"../dist",
+			"content",
+			"",
+			"127.0.0.1:24230",
+			"",
+			"webport",
+			"<stringProp name=\"HTTPSampler.port\">${webport}</stringProp>",
+			"|'...",
+			",.*?'...",
+			"padding:1px;margin-top:1em;margin-bottom:1px;",
+			"",
+			"sabadell",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/webapp/scripts/app/account/login/login.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								44
+							]
+						],
+						"settings":
+						{
+							"auto_name": "E:\\Program Files\\MongoDB 2.6 Standard\\bin",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main/webapp/scripts/app/main/main.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/webapp/scripts/app/kids-entry/kids-entry.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10539,
+								10539
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/webapp/scripts/app/companies-entry/companies-entry.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								895,
+								895
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/webapp/scripts/app/entities/companyOrganizationPairing/companyOrganizationPairing.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1549,
+								1549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main/java/com/biocatch/afikoman/config/SecurityConfiguration.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4153,
+								4153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "afikoman.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"securi",
+				"src\\main\\java\\com\\biocatch\\afikoman\\config\\SecurityConfiguration.java"
+			],
+			[
+				"du",
+				"C:\\Users\\ronny_000\\Desktop\\playground\\DummyCustomerConfiguration.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 445.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

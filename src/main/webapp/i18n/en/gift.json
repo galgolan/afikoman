@@ -1,0 +1,23 @@
+{
+    "afikomanApp": {
+        "gift" : {
+            "home": {
+                "title": "Gifts",
+                "createLabel": "Create a new Gift",
+                "createOrEditLabel": "Create or edit a Gift"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Gift {{ id }}?"
+            },
+            "detail": {
+                "title": "Gift"
+            },
+            "name": "Name",
+            "dateAdded": "DateAdded",
+            "inStock": "InStock",
+            "price": "Price",
+            "picture": "Picture",
+            "metadata": "Metadata"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "afikomanApp": {
+        "companyOrganizationPairing" : {
+            "home": {
+                "title": "CompanyOrganizationPairings",
+                "createLabel": "Create a new CompanyOrganizationPairing",
+                "createOrEditLabel": "Create or edit a CompanyOrganizationPairing"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete CompanyOrganizationPairing {{ id }}?"
+            },
+            "detail": {
+                "title": "CompanyOrganizationPairing"
+            },
+            "Company": "Company",
+            "Organization": "Organization",
+            "CompanyId": "CompanyId",
+            "OrganizationId": "OrganizationId",
+            "Metadata": "Metadata"
+        }
+    }
+}

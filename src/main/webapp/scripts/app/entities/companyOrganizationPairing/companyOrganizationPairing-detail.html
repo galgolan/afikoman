@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="afikomanApp.companyOrganizationPairing.detail.title">CompanyOrganizationPairing</span> {{companyOrganizationPairing.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.companyOrganizationPairing.Company">Company</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{companyOrganizationPairing.Company}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.companyOrganizationPairing.Organization">Organization</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{companyOrganizationPairing.Organization}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.companyOrganizationPairing.CompanyId">CompanyId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{companyOrganizationPairing.CompanyId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.companyOrganizationPairing.OrganizationId">OrganizationId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{companyOrganizationPairing.OrganizationId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.companyOrganizationPairing.Metadata">Metadata</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{companyOrganizationPairing.Metadata}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="companyOrganizationPairing"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

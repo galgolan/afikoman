@@ -1,0 +1,77 @@
+<div>
+
+    <h2>רשימת ילדים ומתנות</h2>
+    <h3>איזה ילד תוכל לשמח לפסח?</h3>
+    
+    <div class="modal fade" id="saveKidModal" tabindex="-1" role="dialog" aria-labelledby="myKidLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="submit()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myKidLabel" translate="afikomanApp.kid.home.createOrEditLabel">Create or edit a Kid</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label>שם פרטי</label>
+                            <input type="text" class="form-control"
+                                   ng-model="employee.firstName">
+                        </div>
+                        <div class="form-group">
+                            <label>שם משפחה</label>
+                            <input type="text" class="form-control"
+                                   ng-model="employee.lastName">
+                        </div>
+                        <div class="form-group">
+                            <label>דואר אלקטרוני</label>
+                            <input type="text" class="form-control"
+                                   ng-model="employee.email">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>                    
+                    <th translate="afikomanApp.kid.firstName">שם</th>
+                    <th>מתנה</th>
+                    <th translate="afikomanApp.gift.price">Price</th>
+                    <th>תמונה</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="kid in kids">                    
+                    <td>{{kid.firstName}}</td>
+                    <td>{{kid.gift.name}}</td>
+                    <td>{{kid.gift.price}}</td>
+                    <td><img ng-src="{{kid.gift.picture}}" style="max-width: 250px"/></td>
+                    <td>
+                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveKidModal" ng-click="selectKid(kid.id)">
+                            <span class="glyphicon glyphicon-flash"></span> <span>בחר</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

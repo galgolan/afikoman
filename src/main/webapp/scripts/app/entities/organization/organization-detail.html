@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="afikomanApp.organization.detail.title">Organization</span> {{organization.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.organization.name">Name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{organization.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.organization.dateAdded">DateAdded</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{organization.dateAdded}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.organization.password">Password</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{organization.password}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.organization.pocEmail">PocEmail</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{organization.pocEmail}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.organization.metadata">Metadata</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{organization.metadata}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="organization"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

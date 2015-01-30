@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="afikomanApp.adoption.detail.title">Adoption</span> {{adoption.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.employeeName">EmployeeName</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.employeeName}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.employeeEmail">EmployeeEmail</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.employeeEmail}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.company">Company</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.company}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.organization">Organization</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.organization}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.kid">Kid</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.kid}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.kidId">KidId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.kidId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.organizationId">OrganizationId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.organizationId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.adoption.companyId">CompanyId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{adoption.companyId}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="adoption"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

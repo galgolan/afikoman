@@ -1,0 +1,22 @@
+{
+    "afikomanApp": {
+        "organization" : {
+            "home": {
+                "title": "Organizations",
+                "createLabel": "Create a new Organization",
+                "createOrEditLabel": "Create or edit a Organization"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Organization {{ id }}?"
+            },
+            "detail": {
+                "title": "Organization"
+            },
+            "name": "Name",
+            "dateAdded": "DateAdded",
+            "password": "Password",
+            "pocEmail": "PocEmail",
+            "metadata": "Metadata"
+        }
+    }
+}

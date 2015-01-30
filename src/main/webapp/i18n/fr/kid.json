@@ -1,0 +1,26 @@
+{
+    "afikomanApp": {
+        "kid" : {
+            "home": {
+                "title": "Kids",
+                "createLabel": "Créer un nouveau Kid",
+                "createOrEditLabel": "Créer ou éditer un Kid"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Kid {{ id }} ?"
+            },
+            "detail": {
+                "title": "Kid"
+            },
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "dateAdded": "DateAdded",
+            "organization": "Organization",
+            "desiredGift": "DesiredGift",
+            "personalNote": "PersonalNote",
+            "metadata": "Metadata",
+            "picture": "Picture"
+        }
+    }
+}
+

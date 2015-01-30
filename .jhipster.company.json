@@ -1,0 +1,60 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "dateAdded",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DateAdded",
+            "fieldNameUnderscored": "date_added"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "password",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Password",
+            "fieldNameUnderscored": "password"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "pocEmail",
+            "fieldType": "String",
+            "fieldNameCapitalized": "PocEmail",
+            "fieldNameUnderscored": "poc_email"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "metadata",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Metadata",
+            "fieldNameUnderscored": "metadata"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "website",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Website",
+            "fieldNameUnderscored": "website"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true
+}

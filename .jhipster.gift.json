@@ -1,0 +1,53 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "dateAdded",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DateAdded",
+            "fieldNameUnderscored": "date_added"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "inStock",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "InStock",
+            "fieldNameUnderscored": "in_stock"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "price",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Price",
+            "fieldNameUnderscored": "price"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "picture",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Picture",
+            "fieldNameUnderscored": "picture"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "metadata",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Metadata",
+            "fieldNameUnderscored": "metadata"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true
+}

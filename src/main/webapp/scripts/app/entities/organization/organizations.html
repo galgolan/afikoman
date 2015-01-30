@@ -1,0 +1,136 @@
+<div>
+
+    <h2 translate="afikomanApp.organization.home.title">Organization</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveOrganizationModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="afikomanApp.organization.home.createLabel">Create a new Organization</span>
+    </button>
+    <div class="modal fade" id="saveOrganizationModal" tabindex="-1" role="dialog" aria-labelledby="myOrganizationLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myOrganizationLabel" translate="afikomanApp.organization.home.createOrEditLabel">Create or edit a Organization</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="organization.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="afikomanApp.organization.name">Name</label>
+                            <input type="text" class="form-control"
+                                   ng-model="organization.name">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.organization.dateAdded">DateAdded</label>
+                            <input type="datetime-local" class="form-control"
+                                   ng-model="organization.dateAdded" ng-model-options="{timezone: 'UTC'}">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.organization.password">Password</label>
+                            <input type="text" class="form-control"
+                                   ng-model="organization.password">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.organization.pocEmail">PocEmail</label>
+                            <input type="text" class="form-control"
+                                   ng-model="organization.pocEmail">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.organization.metadata">Metadata</label>
+                            <input type="text" class="form-control"
+                                   ng-model="organization.metadata">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteOrganizationConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" ng-submit="confirmDelete(organization.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="afikomanApp.organization.delete.question" translate-values="{id: '{{organization.id}}'}">Are you sure you want to delete Organization {{organization.id}}?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="afikomanApp.organization.name">Name</th>
+                    <th translate="afikomanApp.organization.dateAdded">DateAdded</th>
+                    <th translate="afikomanApp.organization.password">Password</th>
+                    <th translate="afikomanApp.organization.pocEmail">PocEmail</th>
+                    <th translate="afikomanApp.organization.metadata">Metadata</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="organization in organizations">
+                    <td><a ui-sref="organizationDetails({id:organization.id})">{{organization.id}}</a></td>
+                    <td>{{organization.name}}</td>
+                    <td>{{organization.dateAdded}}</td>
+                    <td>{{organization.password}}</td>
+                    <td>{{organization.pocEmail}}</td>
+                    <td>{{organization.metadata}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="organizationDetail({id:organization.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(organization.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(organization.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{
+    "afikomanApp": {
+        "companyOrganizationPairing" : {
+            "home": {
+                "title": "צימוד חברה וארגון",
+                "createLabel": "צור צימוד חדש",
+                "createOrEditLabel": "צור או ערוך צימוד"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete CompanyOrganizationPairing {{ id }}?"
+            },
+            "detail": {
+                "title": "צימוד חברה וארגון"
+            },
+            "Company": "חברה",
+            "Organization": "ארגון",
+            "CompanyId": "מזהה חברה",
+            "OrganizationId": "מזהה ארגון",
+            "Metadata": "מידע נוסף"
+        }
+    }
+}

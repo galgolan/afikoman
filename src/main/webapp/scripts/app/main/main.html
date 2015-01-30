@@ -1,0 +1,43 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+            <span class="hipster img-responsive img-rounded"></span>
+        </div>
+        <div class="col-md-8">
+            <h1 translate="main.title">Welcome, Java Hipster!</h1>
+            <p class="lead" translate="main.subtitle">This is your homepage</p>
+
+            <div ng-switch="isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true"
+                     translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
+                    You are logged in as user "Admin".
+                </div>
+
+                <!--
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
+                    If you want to <a href="#/login">authenticate</a>, you can try the default login="admin" and
+                    password="admin".
+                </div>
+                -->
+
+                <div class="" ng-switch-when="false">
+                    <button type="button" class="btn btn-default" ng-click="login('Company')"> <!-- ui-sref="login">-->
+                        <span class="glyphicon glyphicon-briefcase"></span>&nbsp;<span>כניסת חברות</span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-click="login('Organization')"> <!-- ui-sref="kids-entry">-->
+                        <span class="glyphicon glyphicon-gift"></span>&nbsp;<span>כניסת ילדים</span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-click="login('Admin')">
+                        <span class="glyphicon glyphicon-cog"></span>&nbsp;<span>ניהול</span>
+                    </button>
+                </div>
+
+                <!--
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register">
+                    Don't have an account? <a href=\"#/register\">Register</a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>

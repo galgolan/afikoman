@@ -1,0 +1,46 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "Company",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Company",
+            "fieldNameUnderscored": "company"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "Organization",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Organization",
+            "fieldNameUnderscored": "organization"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "CompanyId",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "CompanyId",
+            "fieldNameUnderscored": "company_id"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "OrganizationId",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "OrganizationId",
+            "fieldNameUnderscored": "organization_id"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "Metadata",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Metadata",
+            "fieldNameUnderscored": "metadata"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false
+}

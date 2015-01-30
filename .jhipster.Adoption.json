@@ -1,0 +1,67 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "employeeName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EmployeeName",
+            "fieldNameUnderscored": "employee_name"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "employeeEmail",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EmployeeEmail",
+            "fieldNameUnderscored": "employee_email"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "company",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Company",
+            "fieldNameUnderscored": "company"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "organization",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Organization",
+            "fieldNameUnderscored": "organization"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "kid",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Kid",
+            "fieldNameUnderscored": "kid"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "kidId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "KidId",
+            "fieldNameUnderscored": "kid_id"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "organizationId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "OrganizationId",
+            "fieldNameUnderscored": "organization_id"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "companyId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CompanyId",
+            "fieldNameUnderscored": "company_id"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false
+}

@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="afikomanApp.gift.detail.title">Gift</span> {{gift.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.name">Name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.dateAdded">DateAdded</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.dateAdded}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.inStock">InStock</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.inStock}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.price">Price</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.price}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.picture">Picture</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.picture}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.gift.metadata">Metadata</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{gift.metadata}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="gift"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

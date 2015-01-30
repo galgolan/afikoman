@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="afikomanApp.kid.detail.title">Kid</span> {{kid.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.firstName">FirstName</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.firstName}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.lastName">LastName</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.lastName}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.dateAdded">DateAdded</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.dateAdded}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.organization">Organization</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.organization}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.desiredGift">DesiredGift</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.desiredGift}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.personalNote">PersonalNote</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.personalNote}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.metadata">Metadata</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.metadata}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="afikomanApp.kid.picture">Picture</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kid.picture}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="kid"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

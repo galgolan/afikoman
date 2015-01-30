@@ -1,0 +1,25 @@
+{
+    "afikomanApp": {
+        "kid" : {
+            "home": {
+                "title": "ילדים",
+                "createLabel": "הוסף ילד",
+                "createOrEditLabel": "הוסף או עדכן ילד"
+            },
+            "delete": {
+                "question": "האם אתה בטוח שאתה רוצה להסיר את הילד {{ id }}?"
+            },
+            "detail": {
+                "title": "ילד"
+            },
+            "firstName": "שם פרטי",
+            "lastName": "שם משפחה",
+            "dateAdded": "זמן הוספה",
+            "organization": "ארגון",
+            "desiredGift": "מתנה",
+            "personalNote": "מסר אישי",
+            "metadata": "Metadata",
+            "picture": "Picture"
+        }
+    }
+}

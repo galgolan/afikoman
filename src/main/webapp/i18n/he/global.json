@@ -1,0 +1,93 @@
+{
+    "global": {
+        "title": "אפיקומן",
+        "browsehappy": "את/ה משתמ/ת בדפדפן <strong>פרהיסטורי</strong>. אנא <a href=\"http://browsehappy.com/?locale=he\">עדכנ/י</a> על מנת לשפר את החוויה.",
+        "menu": {
+            "home": "בית",
+            "entities": {
+                "main": "ישויות",
+                "additionalEntity": "JHipster will add addtional entities",
+                "gift": "מתנה",
+                "organization": "ארגון",
+                "kid": "ילד",
+                "company": "חברה",
+                "companyOrganizationPairing": "צימוד חברה וארגון",
+                "adoption": "אימוצים"
+            },
+            "account": {
+                "main": "חשבון",
+                "settings": "הגדרות",
+                "password": "סיסמה",
+                "sessions": "חיבורים",
+                "tracker": "User tracker",
+                "metrics": "Metrics",
+                "health": "Health",
+                "configuration": "Configuration",
+                "logs": "Logs",
+                "audits": "Audits",
+                "login": "התחברות",
+                "logout": "התנתקות",
+                "apidocs": "API",
+                "register": "הרשמה"
+            },
+            "admin": "ניהול",
+            "language": "שפה"
+        },
+        "form": {
+            "username": "שם משתמש",
+            "username.placeholder": "שם המשתמש שלך",
+            "newpassword": "סיסמה חדשה",
+            "newpassword.placeholder": "סיסמה חדשה",
+            "confirmpassword": "סיסמה חדשה (פעם נוספת)",
+            "confirmpassword.placeholder": "סיסמה חדשה",
+            "email": "דואר אלקטרוני",
+            "email.placeholder": "כתובת הדואר האלקטרוני שלך"
+        },
+        "messages": {
+            "info": {
+                "authenticated": "If you want to <a href=\"#/login\">authenticate</a>, you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\").",
+                "register": "<a href=\"#/register\">צור חשבון חדש</a>"
+            },
+            "error": {
+                "dontmatch" : "The password and its confirmation do not match!"
+            },
+            "validate": {
+                "newpassword": {
+                    "required": "Your password is required.",
+                    "minlength": "Your password is required to be at least 5 characters",
+                    "maxlength": "Your password cannot be longer than 50 characters",
+                    "strength": "Password strength:"
+                },
+                "confirmpassword": {
+                    "required": "Your confirmation password is required.",
+                    "minlength": "Your confirmation password is required to be at least 5 characters",
+                    "maxlength": "Your confirmation password cannot be longer than 50 characters"
+                },
+                "email": {
+                    "required": "Your e-mail is required.",
+                    "invalid": "Your e-mail is invalid.",
+                    "minlength": "Your e-mail is required to be at least 5 characters",
+                    "maxlength": "Your e-mail cannot be longer than 50 characters"
+                }
+            }
+        }
+    },
+    "entity": {
+        "action": {
+            "back": "חזור",
+            "cancel": "ביטול",
+            "delete": "מחק",
+            "edit": "ערוך",
+            "save": "אישור",
+            "view": "פרטים"
+        },
+        "detail": {
+            "field": "Field",
+            "value": "Value"
+        },
+        "delete": {
+            "title": "אנא אשר את המחיקה"
+        }
+    },
+    "footer": "נבנה באהבה בחברת"
+}
