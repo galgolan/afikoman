@@ -19,27 +19,29 @@
                         <h4 class="modal-title" id="myCompanyLabel" translate="afikomanApp.company.home.createOrEditLabel">Create or edit a Company</h4>
                     </div>
                     <div class="modal-body">
+                        <!--
                         <div class="form-group">
                             <label>ID</label>
                             <input type="text" class="form-control" name="id"
                                    ng-model="company.id" readonly>
-                        </div>
-
+                        </div>-->
                         <div class="form-group">
                             <label translate="afikomanApp.company.name">Name</label>
                             <input type="text" class="form-control"
                                    ng-model="company.name">
                         </div>
+                        <!--
                         <div class="form-group">
                             <label translate="afikomanApp.company.dateAdded">DateAdded</label>
                             <input type="datetime-local" class="form-control"
                                    ng-model="company.dateAdded" ng-model-options="{timezone: 'UTC'}">
-                        </div>
+                        </div>                        
                         <div class="form-group">
                             <label translate="afikomanApp.company.password">Password</label>
                             <input type="text" class="form-control"
                                    ng-model="company.password">
                         </div>
+                        -->
                         <div class="form-group">
                             <label translate="afikomanApp.company.pocEmail">PocEmail</label>
                             <input type="text" class="form-control"
@@ -107,8 +109,7 @@
                 <tr>
                     <th>ID</th>
                     <th translate="afikomanApp.company.name">Name</th>
-                    <th translate="afikomanApp.company.dateAdded">DateAdded</th>
-                    <th translate="afikomanApp.company.password">Password</th>
+                    <th translate="afikomanApp.company.dateAdded">DateAdded</th>                    
                     <th translate="afikomanApp.company.pocEmail">PocEmail</th>
                     <th translate="afikomanApp.company.metadata">Metadata</th>
                     <th translate="afikomanApp.company.description">Description</th>
@@ -121,7 +122,6 @@
                     <td><a ui-sref="companyDetails({id:company.id})">{{company.id}}</a></td>
                     <td>{{company.name}}</td>
                     <td>{{company.dateAdded}}</td>
-                    <td>{{company.password}}</td>
                     <td>{{company.pocEmail}}</td>
                     <td>{{company.metadata}}</td>
                     <td>{{company.description}}</td>

@@ -18,6 +18,7 @@ angular.module('afikomanApp')
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('organization');
+                        $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }]
                 }
@@ -36,7 +37,7 @@ angular.module('afikomanApp')
                 },
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                        $translatePartialLoader.addPart('organization');
+                        $translatePartialLoader.addPart('organization');                        
                         return $translate.refresh();
                     }]
                 }
