@@ -18,6 +18,7 @@ angular.module('afikomanApp')
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('companyOrganizationPairing');
+                        $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }]
                 }

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('afikomanApp')
-    .controller('CompaniesEntryController', function ($q, $scope, Gift, Kid, Company, CompanyOrganizationPairing, Adoption, Principal) {
+    .controller('CompaniesEntryController', function ($q, $scope, $state, Gift, Kid, Company, CompanyOrganizationPairing, Adoption, Principal) {
         $scope.kids = [];
         $scope.gifts = [];
         $scope.company = {};
@@ -24,7 +24,7 @@ angular.module('afikomanApp')
                 var currCompanyName = data[4].firstName ||  data[4].login;
                 $scope.company = $.grep(data[2], function(company) { return company.name == currCompanyName; })[0];
 
-                if (typeof($scope.company) === "undefined") return; // no company listed under logged in account
+                if (typeof($scope.company) === "undefined") $state.go('error'); // no company listed under logged in account
 
                 // get already made adoptions by this company
                 var adoptedKidNames = $.map(data[5], function (adoption) { if (adoption.company == currCompanyName) return adoption.kid; })
@@ -42,6 +42,12 @@ angular.module('afikomanApp')
                 $.each(kids, function(index, kid) { kid.gift = getGiftForKid(kid, $scope.gifts) });
 
                 $scope.kids = kids;
+
+                // if no kids, show no-more-kids modal
+                if (kids.length <= 0) {
+                    $('#noMoreKidsModal').on('hidden.bs.modal', $scope.noMoreKidsModalCancel)
+                    $('#noMoreKidsModal').modal('show');
+                }
             });
         };
 
@@ -63,7 +69,25 @@ angular.module('afikomanApp')
                 companyId: $scope.company.id, 
                 id: null}, function () {
                     $scope.loadAll();
+                    $scope.employee = {};
+                    $scope.kid = {};
                     $('#saveKidModal').modal('hide');
                 });
+        }
+
+        $scope.submitNoKid = function () {
+            Adoption.save({
+                employeeName: $scope.employee.firstName + ' ' + $scope.employee.lastName, 
+                employeeEmail: $scope.employee.email, 
+                company: $scope.company.name,
+                companyId: $scope.company.id, 
+                id: null}, function () {                    
+                    $('#noMoreKidsModal').modal('hide');
+                    $state.go('home'); // TODO: redirect to thank you page
+                });
+        }
+
+        $scope.noMoreKidsModalCancel = function(keyEvent) {
+          $state.go('home'); // TODO: redirect to thank you page
         }
     });

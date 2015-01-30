@@ -15,7 +15,8 @@ angular.module('afikomanApp')
                 password: 'P455w0rd',
                 langKey: 'he',
                 login: $scope.organization.name,
-                email: $scope.organization.pocEmail
+                email: $scope.organization.pocEmail,
+                dateAdded: new Date()
             };
 
             Auth.createAccount(registerAccount).then(function () {
