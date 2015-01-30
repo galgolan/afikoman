@@ -2,23 +2,23 @@
     "afikomanApp": {
         "company" : {
             "home": {
-                "title": "Companys",
-                "createLabel": "Create a new Company",
-                "createOrEditLabel": "Create or edit a Company"
+                "title": "חברות",
+                "createLabel": "צור חברה חדשה",
+                "createOrEditLabel": "צור או ערוך חברה"
             },
             "delete": {
-                "question": "Are you sure you want to delete Company {{ id }}?"
+                "question": "האם אתה בטוח שברצונך למחוק את חברה {{ id }}?"
             },
             "detail": {
-                "title": "Company"
+                "title": "חברה"
             },
-            "name": "Name",
-            "dateAdded": "DateAdded",
-            "password": "Password",
-            "pocEmail": "PocEmail",
-            "metadata": "Metadata",
-            "description": "Description",
-            "website": "Website"
+            "name": "שם",
+            "dateAdded": "תאריך הוספה",
+            "password": "סיסמה",
+            "pocEmail": "איש קשר",
+            "metadata": "מידע נוסף",
+            "description": "תיאור",
+            "website": "אתר אינטרנט"
         }
     }
 }

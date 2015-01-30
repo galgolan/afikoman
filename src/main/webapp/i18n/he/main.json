@@ -3,11 +3,11 @@
         "title": "מבצע אפיקומן",
         "subtitle": "פסח 2015",
         "logged": {
-            "message": "You are logged in as user \"{{username}}\"."
+            "message": "אתה מחובר בתור \"{{username}}\"."
         },
         "question": "If you have any question on JHipster:",
         "link": {
-            "homepage": "JHipster homepage",
+            "homepage": "דף הבית",
             "stackoverflow": "JHipster on Stack Overflow",
             "bugtracker": "JHipster bug tracker",
             "contact": "contact @java_hipster on Twitter"

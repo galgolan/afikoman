@@ -2,21 +2,21 @@
     "afikomanApp": {
         "organization" : {
             "home": {
-                "title": "Organizations",
-                "createLabel": "Create a new Organization",
-                "createOrEditLabel": "Create or edit a Organization"
+                "title": "ארגונים",
+                "createLabel": "צור ארגון חדש",
+                "createOrEditLabel": "צור או ערוך ארגון"
             },
             "delete": {
-                "question": "Are you sure you want to delete Organization {{ id }}?"
+                "question": "האם אתה בטוח שברצונך למחוק את ארגון {{ id }}?"
             },
             "detail": {
-                "title": "Organization"
+                "title": "ארגון"
             },
-            "name": "Name",
-            "dateAdded": "DateAdded",
-            "password": "Password",
-            "pocEmail": "PocEmail",
-            "metadata": "Metadata"
+            "name": "שם",
+            "dateAdded": "זמן הוספה",
+            "password": "סיסמה",
+            "pocEmail": "איש קשר",
+            "metadata": "נתונים נוספים"
         }
     }
 }
