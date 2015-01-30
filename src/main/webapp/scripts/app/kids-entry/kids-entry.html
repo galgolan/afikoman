@@ -1,0 +1,97 @@
+<div>
+
+    <h2 translate="afikomanApp.kid.home.title">Kid</h2>
+    
+    <div class="modal fade" id="saveKidModal" tabindex="-1" role="dialog" aria-labelledby="myKidLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myKidLabel" translate="afikomanApp.kid.home.createOrEditLabel">Create or edit a Kid</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.firstName">FirstName</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.firstName">
+                        </div>
+                        <!--<div class="form-group">
+                            <label translate="afikomanApp.kid.lastName">LastName</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.lastName">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.organization">Organization</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.organization">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.dateAdded">DateAdded</label>
+                            <input type="datetime-local" class="form-control"
+                                   ng-model="kid.dateAdded" ng-model-options="{timezone: 'UTC'}">
+                        </div>                        
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.desiredGift">DesiredGift</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.desiredGift">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.personalNote">PersonalNote</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.personalNote">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.metadata">Metadata</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.metadata">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.picture">Picture</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.picture">
+                        </div>-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>                    
+                    <th translate="afikomanApp.gift.name">Name</th>                    
+                    <th translate="afikomanApp.gift.picture">Picture</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="gift in gifts | filter: {inStock:true}">
+                    <!--<td><a ui-sref="giftDetails({id:gift.id})">פרטים</a></td>-->
+                    <td>{{gift.name}}</td>                    
+                    <td><img ng-src="{{gift.picture}}" style="max-width: 250px"/></td>
+                    <td>
+                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveKidModal" ng-click="selectGift(gift.id)">
+                            <span class="glyphicon glyphicon-flash"></span> <span>בחר</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

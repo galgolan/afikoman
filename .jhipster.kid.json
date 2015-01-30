@@ -1,0 +1,67 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "firstName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "FirstName",
+            "fieldNameUnderscored": "first_name"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "lastName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "LastName",
+            "fieldNameUnderscored": "last_name"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "dateAdded",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DateAdded",
+            "fieldNameUnderscored": "date_added"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "organization",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Organization",
+            "fieldNameUnderscored": "organization"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "desiredGift",
+            "fieldType": "String",
+            "fieldNameCapitalized": "DesiredGift",
+            "fieldNameUnderscored": "desired_gift"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "personalNote",
+            "fieldType": "String",
+            "fieldNameCapitalized": "PersonalNote",
+            "fieldNameUnderscored": "personal_note"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "metadata",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Metadata",
+            "fieldNameUnderscored": "metadata"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "picture",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Picture",
+            "fieldNameUnderscored": "picture"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true
+}

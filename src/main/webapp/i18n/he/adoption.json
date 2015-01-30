@@ -1,0 +1,25 @@
+{
+    "afikomanApp": {
+        "adoption" : {
+            "home": {
+                "title": "אימוצים",
+                "createLabel": "צור אימוץ",
+                "createOrEditLabel": "צור או ערוך אימוץ"
+            },
+            "delete": {
+                "question": "האם אתה בטוח שברצונך למחוק את אימוץ {{ id }}?"
+            },
+            "detail": {
+                "title": "אימוץ"
+            },
+            "employeeName": "שם העובד",
+            "employeeEmail": "דואר אלקטרוני של העובד",
+            "company": "חברה",
+            "organization": "ארגון",
+            "kid": "שם הילד",
+            "kidId": "KidId",
+            "organizationId": "OrganizationId",
+            "companyId": "CompanyId"
+        }
+    }
+}

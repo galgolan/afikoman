@@ -1,0 +1,157 @@
+<div>
+
+    <h2 translate="afikomanApp.kid.home.title">Kid</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveKidModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="afikomanApp.kid.home.createLabel">Create a new Kid</span>
+    </button>
+    <div class="modal fade" id="saveKidModal" tabindex="-1" role="dialog" aria-labelledby="myKidLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myKidLabel" translate="afikomanApp.kid.home.createOrEditLabel">Create or edit a Kid</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="kid.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.firstName">FirstName</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.firstName">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.lastName">LastName</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.lastName">
+                        </div>
+                        <!--<div class="form-group">
+                            <label translate="afikomanApp.kid.dateAdded">DateAdded</label>
+                            <input type="datetime-local" class="form-control"
+                                   ng-model="kid.dateAdded" ng-model-options="{timezone: 'UTC'}">
+                        </div>-->
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.organization">Organization</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.organization">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.desiredGift">DesiredGift</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.desiredGift">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.personalNote">PersonalNote</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.personalNote">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.metadata">Metadata</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.metadata">
+                        </div>
+                        <div class="form-group">
+                            <label translate="afikomanApp.kid.picture">Picture</label>
+                            <input type="text" class="form-control"
+                                   ng-model="kid.picture">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteKidConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" ng-submit="confirmDelete(kid.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="afikomanApp.kid.delete.question" translate-values="{id: '{{kid.id}}'}">Are you sure you want to delete Kid {{kid.id}}?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="afikomanApp.kid.firstName">FirstName</th>
+                    <th translate="afikomanApp.kid.lastName">LastName</th>
+                    <th translate="afikomanApp.kid.dateAdded">DateAdded</th>
+                    <th translate="afikomanApp.kid.organization">Organization</th>
+                    <th translate="afikomanApp.kid.desiredGift">DesiredGift</th>
+                    <th translate="afikomanApp.kid.personalNote">PersonalNote</th>
+                    <th translate="afikomanApp.kid.metadata">Metadata</th>
+                    <th translate="afikomanApp.kid.picture">Picture</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="kid in kids">
+                    <td><a ui-sref="kidDetails({id:kid.id})">{{kid.id}}</a></td>
+                    <td>{{kid.firstName}}</td>
+                    <td>{{kid.lastName}}</td>
+                    <td>{{kid.dateAdded}}</td>
+                    <td>{{kid.organization}}</td>
+                    <td>{{kid.desiredGift}}</td>
+                    <td>{{kid.personalNote}}</td>
+                    <td>{{kid.metadata}}</td>
+                    <td>{{kid.picture}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="kidDetail({id:kid.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(kid.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(kid.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

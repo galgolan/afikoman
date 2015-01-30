@@ -1,0 +1,25 @@
+{
+    "afikomanApp": {
+        "adoption" : {
+            "home": {
+                "title": "Adoptions",
+                "createLabel": "Create a new Adoption",
+                "createOrEditLabel": "Create or edit a Adoption"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Adoption {{ id }}?"
+            },
+            "detail": {
+                "title": "Adoption"
+            },
+            "employeeName": "EmployeeName",
+            "employeeEmail": "EmployeeEmail",
+            "company": "Company",
+            "organization": "Organization",
+            "kid": "Kid",
+            "kidId": "KidId",
+            "organizationId": "OrganizationId",
+            "companyId": "CompanyId"
+        }
+    }
+}

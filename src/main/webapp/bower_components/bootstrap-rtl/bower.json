@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-rtl",
+  "description": "Right-to-left (RTL) theme for Twitter Bootstrap 3.2.",
+  "version": "3.2.0-rc4",
+  "homepage": "https://github.com/morteza/bootstrap-rtl",
+  "authors": [
+    "Morteza Ansarinia <ansarinia@me.com>"
+  ],
+  "main": [
+    "dist/css/bootstrap-rtl.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests"
+  ],
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
