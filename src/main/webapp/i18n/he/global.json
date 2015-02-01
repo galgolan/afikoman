@@ -5,14 +5,14 @@
         "menu": {
             "home": "בית",
             "entities": {
-                "main": "ישויות",
-                "additionalEntity": "JHipster will add addtional entities",
+                "main": "ישויות",                
                 "gift": "מתנה",
                 "organization": "ארגון",
                 "kid": "ילד",
                 "company": "חברה",
                 "companyOrganizationPairing": "צימוד חברה וארגון",
-                "adoption": "אימוצים"
+                "adoption": "אימוצים",
+                "additionalEntity": "JHipster will add addtional entities"
             },
             "account": {
                 "main": "חשבון",

@@ -45,7 +45,7 @@ angular.module('afikomanApp')
 
                 // if no kids, show no-more-kids modal
                 if (kids.length <= 0) {
-                    $('#noMoreKidsModal').on('hidden.bs.modal', $scope.noMoreKidsModalCancel)
+                    $('#noMoreKidsModal').on('hidden.bs.modal', $scope.noMoreKidsModalHidden)
                     $('#noMoreKidsModal').modal('show');
                 }
             });
@@ -83,11 +83,10 @@ angular.module('afikomanApp')
                 companyId: $scope.company.id, 
                 id: null}, function () {                    
                     $('#noMoreKidsModal').modal('hide');
-                    $state.go('home'); // TODO: redirect to thank you page
                 });
         }
 
-        $scope.noMoreKidsModalCancel = function(keyEvent) {
-          $state.go('home'); // TODO: redirect to thank you page
+        $scope.noMoreKidsModalHidden = function(keyEvent) {
+          $state.go('companies-thanks'); // TODO: redirect to thank you page
         }
     });
