@@ -22,6 +22,7 @@ angular.module('afikomanApp')
                 function () {
                     $('#saveKidModal').modal('hide');
                     $scope.clear();
+                    $('#approvalNoticeModal').modal('show');
                 });
             });
         };

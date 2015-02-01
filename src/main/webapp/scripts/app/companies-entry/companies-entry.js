@@ -24,5 +24,24 @@ angular.module('afikomanApp')
                         return $translate.refresh();
                     }]
                 }
+            })
+            .state('companies-thanks', {
+                parent: 'site',
+                url: '/companies-thanks',
+                data: {
+                    roles: ['ROLE_USER']
+                },
+                views: {
+                    'content@': {
+                        templateUrl: 'scripts/app/companies-entry/companies-thanks.html',
+                        controller: 'CompaniesThanksController'
+                    }
+                },
+                resolve: {
+                    translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {                        
+                        $translatePartialLoader.addPart('main');
+                        return $translate.refresh();
+                    }]
+                }
             });
     });
