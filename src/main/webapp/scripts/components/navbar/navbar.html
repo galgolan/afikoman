@@ -23,6 +23,18 @@
                         <span>אנחנו</span>
                     </a>
                 </li>
+                <li ui-sref-active="active" ng-switch-when="false">
+                    <a ui-sref="login-companies" ng-click="login('Company')" style="cursor: pointer">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                        <span>חברות</span>
+                    </a>
+                </li>
+                <li ui-sref-active="active" ng-switch-when="false">
+                    <a ui-sref="login-organizations" ng-click="login('Organization')" style="cursor: pointer">
+                        <span class="glyphicon glyphicon-gift"></span>
+                        <span>ילדים</span>
+                    </a>
+                </li>
                 <li ui-sref-active="active" ng-switch-when="true" ng-show="isInRole('ROLE_ADMIN')" class="dropdown pointer">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="">
                                 <span>
@@ -49,7 +61,7 @@
                         <!-- JHipster will add entities to the menu here -->
                     </ul>
                 </li>
-                <li ng-class="{active: $state.includes('account')}" class="dropdown pointer">
+                <li ng-class="{active: $state.includes('account')}" ng-switch-when="true" class="dropdown pointer">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="">
                                 <span>
                                     <span class="glyphicon glyphicon-user"></span>
@@ -60,19 +72,18 @@
                                 </span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')" ng-switch-when="true"><a ui-sref="settings"><span class="glyphicon glyphicon-wrench"></span>
+                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')"><a ui-sref="settings"><span class="glyphicon glyphicon-wrench"></span>
                             &#xA0;<span translate="global.menu.account.settings">Settings</span></a></li>
-                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')" ng-switch-when="true"><a ui-sref="password"><span class="glyphicon glyphicon-lock"></span>
+                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')"><a ui-sref="password"><span class="glyphicon glyphicon-lock"></span>
                             &#xA0;<span translate="global.menu.account.password">Password</span></a></li>
-                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')" ng-switch-when="true"><a ui-sref="sessions"><span class="glyphicon glyphicon-cloud"></span>
+                        <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')"><a ui-sref="sessions"><span class="glyphicon glyphicon-cloud"></span>
                             &#xA0;<span translate="global.menu.account.sessions">Sessions</span></a></li>
-                        <li ui-sref-active="active" ng-switch-when="true"><a href="" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>
+                        <li ui-sref-active="active"><a href="" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>
                             &#xA0;<span translate="global.menu.account.logout">Log out</span></a></li>
                         <!--<li ui-sref-active="active" ng-switch-when="false"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span>
-                            &#xA0;<span translate="global.menu.account.login">Authenticate</span></a></li>-->
-
+                            &#xA0;<span translate="global.menu.account.login">Authenticate</span></a></li>
                         <li ui-sref-active="active" ng-show="isInRole('ROLE_ADMIN')" ng-switch-when="false"><a ui-sref="register"><span class="glyphicon glyphicon-plus-sign"></span>
-                            &#xA0;<span translate="global.menu.account.register">Register</span></a></li>
+                            &#xA0;<span translate="global.menu.account.register">Register</span></a></li>-->
                     </ul>
                 </li>
                 <li ng-class="{active: $state.includes('admin')}"  ng-switch-when="true" ng-show="isInRole('ROLE_ADMIN')" class="dropdown pointer">

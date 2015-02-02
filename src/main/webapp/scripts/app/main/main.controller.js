@@ -18,7 +18,9 @@ angular.module('afikomanApp')
             $rootScope.loginType = role;
             if (role === 'Admin')
                 $state.go('admin-login');
-            else
-                $state.go('login');
+            else if (role == 'Company')
+                $state.go('login-companies');
+            else if (role == 'Organization')
+                $state.go('login-organizations');
         };
     });
