@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('afikomanApp')
-    .controller('NavbarController', function ($scope, $location, $state, Auth, Principal) {
+    .controller('NavbarController', function ($rootScope, $scope, $location, $state, Auth, Principal) {
         $scope.isAuthenticated = Principal.isAuthenticated;
         $scope.isInRole = Principal.isInRole;
         $scope.$state = $state;
@@ -9,5 +9,9 @@ angular.module('afikomanApp')
         $scope.logout = function () {
             Auth.logout();
             $state.go('home');
+        };
+
+        $scope.login = function (role) {
+            $rootScope.loginType = role;
         };
     });
