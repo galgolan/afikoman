@@ -60,6 +60,24 @@ Browser Upgrade Prompt
     background-size: contain;
 }
 
+.biocatch {
+    display: inline-block;
+    width: 183px;
+    height: 54px;
+    background: url("../images/biocatch_logo.png") no-repeat center top;
+    background-size: contain;
+    margin-top: 33%;
+}
+
+.sqream {
+    display: inline-block;
+    width: 216px;
+    height: 80px;
+    background: url("../images/sqream.png") no-repeat center top;
+    background-size: contain;
+    margin-top: 33%;
+}
+
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
