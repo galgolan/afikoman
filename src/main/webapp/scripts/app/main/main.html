@@ -1,43 +1,101 @@
 <div ng-cloak>
     <div class="row">
-        <div class="col-md-4">
-            <span class="hipster img-responsive img-rounded"></span>
-        </div>
-        <div class="col-md-8">
-            <h1 translate="main.title">Welcome, Java Hipster!</h1>
-            <p class="lead" translate="main.subtitle">This is your homepage</p>
-
-            <div ng-switch="isAuthenticated()">
-                <div class="alert alert-success" ng-switch-when="true"
-                     translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
-                    You are logged in as user "Admin".
-                </div>
-
-                <!--
-                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
-                    If you want to <a href="#/login">authenticate</a>, you can try the default login="admin" and
-                    password="admin".
-                </div>
-                -->
-
-                <div class="" ng-switch-when="false">
-                    <button type="button" class="btn btn-default" ng-click="login('Company')"> <!-- ui-sref="login">-->
-                        <span class="glyphicon glyphicon-briefcase"></span>&nbsp;<span>כניסת חברות</span>
-                    </button>
-                    <button type="button" class="btn btn-default" ng-click="login('Organization')"> <!-- ui-sref="kids-entry">-->
-                        <span class="glyphicon glyphicon-gift"></span>&nbsp;<span>כניסת ילדים</span>
-                    </button>
-                    <button type="button" class="btn btn-default" ng-click="login('Admin')">
-                        <span class="glyphicon glyphicon-cog"></span>&nbsp;<span>ניהול</span>
-                    </button>
-                </div>
-
-                <!--
-                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register">
-                    Don't have an account? <a href=\"#/register\">Register</a>
-                </div>
-                -->
-            </div>
+        <div class="col-md-12">
+            <span class="doge img-responsive">
+                <span class="circle circle-medium circle-black">
+                    <h1>ברוכים הבאים למבצע אפיקומן!</h1>
+                </span>
+            </span>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr style="border-top: 3px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px dotted black; margin-top: 3px; margin-bottom: 20px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <h4>עקבו אחרינו:</h4>
+            <div class="row"> <!-- Facebook button -->
+                <a class="circle circle-xsmall circle-black" href="https://www.facebook.com/pages/מבצע-אפיקומן/1525643407709169" style="text-decoration: none">
+                    <p style="width: 100%;font-size: 18px;margin: 0">f</p>
+                </a>
+            </div>
+            <div class="row" style="margin-top: 70%;">
+                <button type="button" class="circle circle-small circle-black" ng-click="login('Organization')">
+                    <p style="width: 100%;font-size: 18px;">צור קשר</p>
+                </button>
+            </div>            
+        </div>
+        <div class="col-md-4 col-md-offset-1" style="margin-top: 5%;">
+            <button type="button" class="btn circle circle-medium circle-green" ng-click="login('Organization')">
+                <p style="width: 100%;font-size: 50px;">כניסת ילדים</p>
+            </button>
+        </div>
+        <div class="col-md-4" style="margin-right: -10%;">
+            <button type="button" class="btn btn-default circle circle-medium circle-pink" ng-click="login('Company')">
+                <p style="width: 100%;font-size: 50px;">כניסת חברות</p>
+            </button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <hr style="border-top: 3px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px dotted black; margin-top: 3px; margin-bottom: 20px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>מבצע אפיקומן הינו מיזם חברתי ששם לו למטרה לשמח ילדים בסיכון עם מתנה לקראת חג הפסח.<br />המיזם נולד כרצון שלנו, עובדים בתעשייה הישראלית, לפעול גם בתחומים חברתיים ולאפשר לילדים שחיים בחסר, לקבל מתנת חג שהם חפצים בה.<br />את המיזם התחלנו כשני סטארט-אפים בתחומים שונים, שרצו לעשות מעשה, ומהר מאד גילינו שאנו לא לבד, ושהרצון לתת הוא משותף לחברות רבות בתעשייה הישראלית.<br /><br />אנחנו גאים להיות חלק מהמיזם הזה, וממרקם אנושי שרוצה לתת ולתרום, ומזמינים אתכם להצטרף אלינו.</h2>
+            <br />
+            <h1><strong>רוצה להצטרף אלינו?</strong></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr style="border-top: 3px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px dotted black; margin-top: 3px; margin-bottom: 20px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="color: rgb(208, 71, 206);">חברות משתתפות</h2>            
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/playtech-logo.png') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/rhodium.png') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/sapiens-logo.jpg') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>        
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/sears.png') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/vocalzoom.png') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>
+        <div class="col-md-4">
+            <span class="img-responsive img-rounded" style="background: url('/assets/images/affiliates/companies/malam.png') no-repeat center top; background-size: contain; width: 200px; height: 100px; display: inline-block"></span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <hr style="border-top: 3px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px solid black; margin-top: 3px; margin-bottom: 3px">
+            <hr style="border-top: 1px dotted black; margin-top: 3px; margin-bottom: 20px">
+        </div>
+    </div>    
 </div>
