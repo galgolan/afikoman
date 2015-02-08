@@ -79,11 +79,11 @@ Browser Upgrade Prompt
 }
 
 .doge {
-    background: url("../images/Doge-head.png") repeat;
+    background: url("../images/yadayim.jpg") repeat;
     display: inline-block;
-    width: 100%;
-    height: 300px;
-    background-size: contain;    
+    width: 851px;
+    height: 315px;
+    background-size: cover;    
 }
 
 .circle {
@@ -133,6 +133,10 @@ Browser Upgrade Prompt
 .circle-pink:hover {
     background-color: #FF778E;
     color: white;
+}
+
+.container {
+    width: 912px;
 }
 
 .navbar {
