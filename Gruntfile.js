@@ -335,7 +335,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.html',
                         'scripts/**/*.html',
-                        'assets/images/**/*.{png,gif,webp}',
+                        'assets/images/**/*.{png,jpeg,jpg,gif,webp}',
                         'assets/fonts/*'
                     ]
                 }, {
@@ -370,7 +370,7 @@ module.exports = function (grunt) {
             test: [
             ],
             dist: [
-                'imagemin',
+                //'imagemin',
                 'svgmin'
             ]
         },
