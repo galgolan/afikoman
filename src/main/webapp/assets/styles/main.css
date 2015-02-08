@@ -79,11 +79,11 @@ Browser Upgrade Prompt
 }
 
 .doge {
-    background: url("../images/yadayim.jpg") repeat;
+    background: url("../images/yadayim.jpg")  no-repeat center top;
     display: inline-block;
     width: 851px;
     height: 315px;
-    background-size: cover;    
+    background-size: contain;
 }
 
 .circle {
