@@ -370,7 +370,11 @@ module.exports = function (grunt) {
             test: [
             ],
             dist: [
+<<<<<<< HEAD
                 //'imagemin', causes grunt to hang for some reason
+=======
+                //'imagemin',
+>>>>>>> 8be9c13b9885cf8295b3c7242a44b819c9cd4281
                 'svgmin'
             ]
         },
