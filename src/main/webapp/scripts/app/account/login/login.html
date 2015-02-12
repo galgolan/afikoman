@@ -1,7 +1,31 @@
 <div>
+    <br />
+    <div class="row" ng-switch="isCompany()">
+        <div class="col-md-10 col-md-offset-1" ng-switch-when="true">
+            <p>
+                שלום לך,<br /><br />
+                בפסח הקרוב תוכל לשמח ילד עם מתנת אפיקומן. ילד שבדרך כלל אינו זוכה לבקש ולהתרגש בקבלת מתנות חדשות.<br />
+                על מנת לרכוש את המתנה, הינך נדרש לסמן את שם ילד/ה והמתנה המבוקשת.<br />
+                את המתנה רצוי לארוז בעטיפת מתנה ולהביאה למשרדים למקום איסוף אשר יוגדר מראש.<br />
+                נא לציין על העטיפה את פרטי הילד והעמותה לה משתייכים על מנת שתוכל להגיע ליעדה.
+                אפשר וכדאי לכתוב ברכה אישית לילדים. הם מאד ישמחו.<br /><br />
+                לאחר ההתחברות, תוצג רשימת הילדים והמתנות שבחרו.<br /><br />
+                חג שמח!
+            </p>
+        </div>
+        <div class="col-md-10 col-md-offset-1" ng-switch-when="false">
+            <p>
+                שלום!<br /><br />
+                בפסח הקרוב תוכל לקבל מתנת אפיקומן לבחירתך, מעובדי חברות ישראליות שאכפת להם.<br />
+                על מנת לקבל את המתנה ולצורך התאמה אישית, לחץ "בחר" ליד המתנה הרצויה, ואז הזן במקום המתאים שם פרטי והאות הראשונה של שם המשפחה (לדוגמה: רוני א)<br /><br />
+                כדי להתחיל, הזן את שם המשתמש שקיבלת.<br /><br />
+                חג שמח!
+            </p>
+        </div>
+    </div>
+    <br /><br />
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <h1 translate="login.title">Authentication</h1>
+        <div class="col-md-4 col-md-offset-4">           
 
             <div class="alert alert-danger" ng-show="authenticationError" translate="login.messages.error.authentication">
                 <strong>Authentication failed!</strong> Please check your credentials and try again.

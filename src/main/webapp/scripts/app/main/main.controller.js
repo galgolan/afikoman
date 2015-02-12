@@ -23,4 +23,8 @@ angular.module('afikomanApp')
             else if (role == 'Organization')
                 $state.go('login-organizations');
         };
+
+        $scope.aboutUs = function(){
+            $state.go('about-us');
+         };
     });
