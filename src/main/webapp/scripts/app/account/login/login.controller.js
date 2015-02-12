@@ -9,7 +9,7 @@ angular.module('afikomanApp')
         $timeout(function (){angular.element('[ng-model="username"]').focus();});
         $scope.login = function () {
             Auth.login({
-                username: $scope.username,
+                username: $scope.username.toLowerCase(),
                 password: 'P455w0rd',
                 rememberMe: $scope.rememberMe
             }).then(function () {
@@ -25,4 +25,8 @@ angular.module('afikomanApp')
                 $scope.authenticationError = true;
             });
         };
+
+        $scope.isCompany = function() {
+            return ($rootScope.loginType == 'Company');
+        }
     });

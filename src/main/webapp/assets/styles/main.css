@@ -85,7 +85,14 @@ Browser Upgrade Prompt
     height: 315px;
     background-size: contain;
 }
-
+.logo {
+    background: url("../images/afikoman_small.jpg")  no-repeat center top;
+    display: inline-block;
+    width: 180px;
+    height: 58px;
+    background-size: contain;
+    margin-left: 5px;
+}
 .circle {
     text-align: center;    
     border-radius: 50%;
@@ -115,13 +122,13 @@ Browser Upgrade Prompt
     border: 1px solid transparent;
 }
 .circle-green {
-    background-color: #3CFF3C;
+    background-color: rgb(39, 166, 39);
     border-color: green;
     color: white;
     border: 1px solid transparent;
 }
 .circle-green:hover {
-    background-color: rgb(39, 166, 39);
+    background-color: #3CFF3C;
     color: white;
 }
 .circle-pink {
