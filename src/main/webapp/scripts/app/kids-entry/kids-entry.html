@@ -8,19 +8,19 @@
             <div class="modal-content">
                 <form name="form" role="form" novalidate
                       class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
-                      ng-submit="create()">
+                      ng-submit="create()" show-validation>
 
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                                 ng-click="clear()">&times;</button>
-                        <h4 class="modal-title" id="myKidLabel" translate="afikomanApp.kid.home.createOrEditLabel">Create or edit a Kid</h4>
+                        <h4 class="modal-title" id="myKidLabel" translate="afikomanApp.kid.home.createOrEditLabel">Please enter your details</h4>
                     </div>
                     <div class="modal-body">
 
                         <div class="form-group">
                             <label translate="afikomanApp.kid.firstName">FirstName</label>
                             <input type="text" class="form-control"
-                                   ng-model="kid.firstName">
+                                   ng-model="kid.firstName" ng-minlength=1 ng-maxlength=50 ng-required="true">
                         </div>
                         <!--<div class="form-group">
                             <label translate="afikomanApp.kid.lastName">LastName</label>
