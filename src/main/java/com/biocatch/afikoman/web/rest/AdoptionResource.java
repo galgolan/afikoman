@@ -1,5 +1,10 @@
 package com.biocatch.afikoman.web.rest;
 
+import com.biocatch.afikoman.domain.Gift;
+import com.biocatch.afikoman.domain.Kid;
+import com.biocatch.afikoman.repository.GiftRepository;
+import com.biocatch.afikoman.repository.KidRepository;
+import com.biocatch.afikoman.service.MailService;
 import com.codahale.metrics.annotation.Timed;
 import com.biocatch.afikoman.domain.Adoption;
 import com.biocatch.afikoman.repository.AdoptionRepository;
@@ -26,6 +31,18 @@ public class AdoptionResource {
     @Inject
     private AdoptionRepository adoptionRepository;
 
+    @Inject
+    private KidRepository kidRepository;
+
+    @Inject
+    private GiftRepository giftRepository;
+
+    @Inject
+    private MailService mailService;
+
+    private final String AdoptionEmailHeader = "תודה רבה מצוות אפיקומן!";
+    private final String AdoptionEmailBody = "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"></head><body style='direction: rtl; font-family: \"Open Sans Hebrew\",\"Helvetica Neue\",Helvetica,Arial,sans-serif'><h2>בחרת במתנה '%s' שביקש/ה %s, מעמותה %s.</h2><p>את המתנה רצוי לארוז בעטיפת מתנה ולהביאה למשרדים למקום איסוף אשר יוגדר מראש.<br/><strong>חשוב מאוד!</strong> נא לציין על העטיפה את פרטי הילד שם + העמותה לה שייך,  על מנת שתוכל להגיע ליעדה. אפשר וכדאי לכתוב ברכה אישית לילדים, הם מאד ישמחו.</p></body></html>";
+
     /**
      * POST  /adoptions -> Create a new adoption.
      */
@@ -36,6 +53,15 @@ public class AdoptionResource {
     public void create(@RequestBody Adoption adoption) {
         log.debug("REST request to save Adoption : {}", adoption);
         adoptionRepository.save(adoption);
+
+        if (adoption.getKidId() == null) return;
+
+        // send an email to the employee with the adoption details
+        Kid kid = kidRepository.findOne(adoption.getKidId());
+        Gift gift = giftRepository.findOne(kid.getDesiredGift());
+
+        String mailBody = String.format(AdoptionEmailBody, gift.getName(), kid.getFirstName(), adoption.getOrganization());
+        mailService.sendEmail(adoption.getEmployeeEmail(), AdoptionEmailHeader, mailBody, true, true);
     }
 
     /**
