@@ -41,7 +41,10 @@ angular.module('afikomanApp')
                 $scope.gifts = $.grep(data[0], function (gift) { return $.inArray(gift.id, giftIds) >= 0; });
                 $.each(kids, function(index, kid) { kid.gift = getGiftForKid(kid, $scope.gifts) });
 
-                $scope.kids = kids;
+                // we shuffle the kids array to reduce the chance that the same kid will be selected by two people
+                $scope.kids = kids.sort(function() {
+                  return .5 - Math.random();
+                });
 
                 // if no kids, show no-more-kids modal
                 if (kids.length <= 0) {
@@ -58,21 +61,34 @@ angular.module('afikomanApp')
         }
 
         $scope.submit = function () {
-            Adoption.save({
-                employeeName: $scope.employee.firstName + ' ' + $scope.employee.lastName, 
-                employeeEmail: $scope.employee.email, 
-                company: $scope.company.name, 
-                organization: $scope.kid.organization, 
-                kid: $scope.kid.firstName, 
-                kidId: $scope.kid.id, 
-                organizationId: null, 
-                companyId: $scope.company.id, 
-                id: null}, function () {
+
+            Adoption.query(function (result) {
+                var alreadyAdopted = $.grep(result, function (adoption) { return adoption.kidId == $scope.kid.id; });
+                if (alreadyAdopted != null && alreadyAdopted.length > 0) {                    
                     $scope.loadAll();
-                    $scope.employee = {};
                     $scope.kid = {};
                     $('#saveKidModal').modal('hide');
-                });
+                    $('#alreadyAdoptedModal').modal('show');
+                }
+                else {
+                    Adoption.save({
+                        employeeName: $scope.employee.firstName + ' ' + $scope.employee.lastName, 
+                        employeeEmail: $scope.employee.email, 
+                        company: $scope.company.name, 
+                        organization: $scope.kid.organization, 
+                        kid: $scope.kid.firstName, 
+                        kidId: $scope.kid.id, 
+                        organizationId: null, 
+                        companyId: $scope.company.id, 
+                        id: null
+                    }, function () {
+                            $scope.loadAll();
+                            $scope.employee = {};
+                            $scope.kid = {};
+                            $('#saveKidModal').modal('hide');
+                    });
+                }
+            });            
         }
 
         $scope.submitNoKid = function () {
