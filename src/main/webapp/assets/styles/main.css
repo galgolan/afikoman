@@ -69,6 +69,15 @@ Browser Upgrade Prompt
     margin-top: 33%;
 }
 
+.benny-cropped {
+    display: inline-block;
+    width: 196px;
+    height: 171px;
+    background: url("../images/benny_cropped.jpg") no-repeat center top;
+    background-size: contain;
+    /*margin-top: 33%;*/
+}
+
 .sqream {
     display: inline-block;
     width: 216px;
