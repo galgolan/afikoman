@@ -13,4 +13,4 @@ README for afikoman
 - run `mvn install -Pprod -Dmaven.test.skip=true` (or fix the test)
 
 # Running
-- run `sudo nohup java -jar target/afikoman-0.0.1-SNAPSHOT.war &`
+- run `sudo nohup java -jar target/afikoman-0.0.1-SNAPSHOT.war --spring.profiles.active=prod &`
